@@ -1,0 +1,17 @@
+/* landing page */
+.nav-img {
+	width: 40px;
+	height: auto;
+	border: none;
+}
+
+.landing-img {
+	position: relative;
+	width: 70%;
+	margin: 0px auto;
+	display: block;
+}
+
+.white-font {
+	color: white;
+}

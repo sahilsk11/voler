@@ -64,13 +64,13 @@
         <h3 class="my-4">Get around town.</h3>
         <div class="row text-center text-lg-left">
             <div class="col-lg-3 col-md-4 col-xs-6">
-                <a href="#" class="d-block mb-4 h-100">
-                <img class="img-fluid img-thumbnail" src="images/bird.jpg" alt="">
+                <a href="#" class="d-block mb-4 h-100" data-toggle="modal" data-target="#scooter">
+                <img class="img-fluid img-thumbnail" src="images/scooter.png" alt="">
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6">
-                <a href="#" class="d-block mb-4 h-100">
-                <img class="img-fluid img-thumbnail" src="images/skateboard.png" alt="">
+                <a href="#" class="d-block mb-4 h-100" data-toggle="modal" data-target="#skateboard">
+                <img class="img-fluid img-thumbnail" src="images/skateboard.jpeg" alt="">
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6">
@@ -83,7 +83,7 @@
         <h3 class="my-4">Wake up the neighbors.</h3>
         <div class="row text-center text-lg-left">
             <div class="col-lg-3 col-md-4 col-xs-6">
-                <a href="#" class="d-block mb-4 h-100">
+                <a href="#" class="d-block mb-4 h-100" data-toggle="modal" data-target=>
                 <img class="img-fluid img-thumbnail" src="images/speakers.jpg" alt="">
                 </a>
             </div>
@@ -99,7 +99,13 @@
             </div>
         </div>
         <h3 class="my-4">You're in college. Learn how to cook.</h3>
+        <h5 class="my-4">Note: all kitchen items are washed <b>thoroughly</b> and inspected before use.</h5> 
         <div class="row text-center text-lg-left">
+            <div class="col-lg-3 col-md-4 col-xs-6">
+                <a href="#" class="d-block mb-4 h-100" data-toggle="modal" data-target="#toaster">
+                <img class="img-fluid img-thumbnail" src="images/toaster.jpeg" alt="">
+                </a>
+            </div>
             <div class="col-lg-3 col-md-4 col-xs-6">
                 <a href="#" class="d-block mb-4 h-100">
                 <img class="img-fluid img-thumbnail" src="images/pan.jpeg" alt="">
@@ -135,9 +141,74 @@
                 </a>
             </div>
         </div>
-
     </div>
     <!-- /.container -->
+
+    <div class="modal" tabindex="-1" role="dialog" id="scooter">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">GOTRAX Electric Scooter</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>It's not a Bird but it's close enough.</p>
+                    <p>PRICE: $20/day</p>
+                    <p>Damage fee: $30<br>Loss/replacement fee: $299</p>
+                </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" tabindex="-1" role="dialog" id="skateboard">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">RazorX Cruiser Electric Skateboard</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Zippy and light board to flex on 'em.</p>
+                    <p>PRICE: $15/day</p>
+                    <p>Damage fee: $40<br>Loss/replacement fee: $150</p>
+                </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" tabindex="-1" role="dialog" id="toaster">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Hamilton Beach Warm Mode 2 Slice Toaster</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Classic trusty toaster.</p>
+                    <p>PRICE: $5/day</p>
+                    <p>Damage fee: $10<br>Loss/replacement fee: $24</p>
+                </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="bg-black small text-center text-white-50">

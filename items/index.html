@@ -9,6 +9,8 @@
         <meta name="author" content="">
 
         <title>Voler - Items</title>
+        <link href="../images/icon.png" rel="icon">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Varela+Round" rel="stylesheet">
 
         <!-- Bootstrap core CSS -->
         <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -23,11 +25,11 @@
     <body>
 
     <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="#">
                 <a class="navbar-brand js-scroll-trigger" href="../">
-                    <img src="../images/icon.png" class="nav-img">
+                    <img src="../images/v.png" class="nav-img">
                 </a>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,22 +37,19 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
-                        <!--
-                        <li class="nav-item active">
-                        <a class="nav-link" href="#">Home
-                        <span class="sr-only">(current)</span>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#transportation">Transportation
                         </a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="#parties">Parties</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
+                            <a class="nav-link" href="#cooking">Cooking</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="#gaming">Gaming</a>
                         </li>
-                    -->
                     </ul>
                 </div>
             </div>
@@ -59,9 +58,9 @@
     <!-- Page Content -->
     <div class="container">
 
-        <h1 class="my-4 text-center">Browse items</h1>
+        <h1 class="my-4 text-center title-font no-margin">Browse items</h1>
 
-        <h3 class="my-4">Get around town.</h3>
+        <h3 class="my-4 title-font anchor" id="transportation">Get around town.</h3>
         <div class="row text-center text-lg-left">
             <div class="col-lg-3 col-md-4 col-xs-6">
                 <a href="#" class="d-block mb-4 h-100" data-toggle="modal" data-target="#scooter">
@@ -69,40 +68,40 @@
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6">
-                <a href="#" class="d-block mb-4 h-100" data-toggle="modal" data-target="#skateboard">
+                <a class="d-block mb-4 h-100" data-toggle="modal" data-target="#skateboard">
                 <img class="img-fluid img-thumbnail" src="images/skateboard.jpeg" alt="">
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6">
-                <a href="#" class="d-block mb-4 h-100">
+                <a href="#" class="d-block mb-4 h-100" data-toggle="modal" data-target="#bike">
                 <img class="img-fluid img-thumbnail" src="images/bike.jpeg" alt="">
                 </a>
             </div>
         </div>
 
-        <h3 class="my-4">Wake up the neighbors.</h3>
+        <h3 class="my-4 title-font anchor" id="parties">Wake up the neighbors.</h3>
         <div class="row text-center text-lg-left">
             <div class="col-lg-3 col-md-4 col-xs-6">
-                <a href="#" class="d-block mb-4 h-100" data-toggle="modal" data-target=>
+                <a href="#" class="d-block mb-4 h-100" data-toggle="modal" data-target="#speaker1">
                 <img class="img-fluid img-thumbnail" src="images/speakers.jpg" alt="">
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6">
-                <a href="#" class="d-block mb-4 h-100">
+                <a href="#" class="d-block mb-4 h-100" data-toggle="modal" data-target="#speaker2">
                 <img class="img-fluid img-thumbnail" src="images/speaker1.jpg" alt="">
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6">
-                <a href="#" class="d-block mb-4 h-100">
+                <a href="#" class="d-block mb-4 h-100" data-toggle="modal" data-target="#speaker3">
                 <img class="img-fluid img-thumbnail" src="images/speaker2.jpeg" alt="">
                 </a>
             </div>
         </div>
-        <h3 class="my-4">You're in college. Learn how to cook.</h3>
-        <h5 class="my-4">Note: all kitchen items are washed <b>thoroughly</b> and inspected before use.</h5> 
+        <h3 class="my-4 title-font anchor" id="cooking">You're in college. Learn how to cook.</h3>
+        <p class="my-4">Note: all kitchen items are washed <b>thoroughly</b> and inspected before use.</p> 
         <div class="row text-center text-lg-left">
             <div class="col-lg-3 col-md-4 col-xs-6">
-                <a href="#" class="d-block mb-4 h-100" data-toggle="modal" data-target="#toaster">
+                <a class="d-block mb-4 h-100" data-toggle="modal" data-target="#toaster">
                 <img class="img-fluid img-thumbnail" src="images/toaster.jpeg" alt="">
                 </a>
             </div>
@@ -123,7 +122,7 @@
             </div>
         </div>
 
-        <h3 class="my-4">Consoles</h3>
+        <h3 class="my-4 title-font anchor" id="gaming">Consoles</h3>
         <div class="row text-center text-lg-left">
             <div class="col-lg-3 col-md-4 col-xs-6">
                 <a href="#" class="d-block mb-4 h-100">
@@ -177,8 +176,96 @@
                 </div>
                 <div class="modal-body">
                     <p>Zippy and light board to flex on 'em.</p>
-                    <p>PRICE: $15/day</p>
+                    <p>PRICE: $5/day</p>
                     <p>Damage fee: $40<br>Loss/replacement fee: $150</p>
+                </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" tabindex="-1" role="dialog" id="bike">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">29" Men's Schwinn Boundary Mountain Bike</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Ol' Reliable Mountain bike. 21-Speed and dual brakes.</p>
+                    <p>PRICE: $7/day</p>
+                    <p>Damage fee: $30<br>Loss/replacement fee: $240</p>
+                </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" tabindex="-1" role="dialog" id="speaker1">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Logitech Z313 Multimedia Speaker System</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Powerful speaker system, ideal for desktop setups or movie night.</p>
+                    <p>PRICE: $3/day</p>
+                    <p>Damage fee: $15<br>Loss/replacement fee: $35</p>
+                </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" tabindex="-1" role="dialog" id="speaker2">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Britelite - iRocker XS-3000 15"</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Huge speakers perfect for parties. 1500W system with 15" woofer and 1 tweeter. Has bluetooth, radio, USB, and SD input.</p>
+                    <p>PRICE: $4/day</p>
+                    <p>Damage fee: $30<br>Loss/replacement fee: $70</p>
+                </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" tabindex="-1" role="dialog" id="speaker3">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">ION Audio Gameday Bluetooth Speaker</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Tailgate essential. Battery-powered two way speaker and aux input. Comes with microphone.</p>
+                    <p>PRICE: $7/day</p>
+                    <p>Damage fee: $50<br>Loss/replacement fee: $120</p>
                 </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -213,7 +300,7 @@
     <!-- Footer -->
     <footer class="bg-black small text-center text-white-50">
         <div class="container">
-          Made by Sahil Kapur<br>
+          Made by <a href="http://www.sahilkapur.com" target="_blank">Sahil Kapur</a><br>
           Copyright &copy; Voler 2019
         </div>
     </footer>

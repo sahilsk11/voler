@@ -100,6 +100,7 @@
         <h3 class="my-4 title-font anchor" id="cooking">You're in college. Learn how to cook.</h3>
         <p class="my-4">Note: all kitchen items are washed <b>thoroughly</b> and inspected before use.</p> 
         <div class="row text-center text-lg-left">
+            <!--
             <div class="col-lg-3 col-md-4 col-xs-6">
                 <a class="d-block mb-4 h-100" data-toggle="modal" data-target="#toaster">
                 <img class="img-fluid img-thumbnail" src="images/toaster.jpeg" alt="">
@@ -115,28 +116,36 @@
                 <img class="img-fluid img-thumbnail" src="images/spatula.jpeg" alt="">
                 </a>
             </div>
+            -->
+
             <div class="col-lg-3 col-md-4 col-xs-6">
-                <a href="#" class="d-block mb-4 h-100">
+                <a href="#" class="d-block mb-4 h-100" data-toggle="modal" data-target="#pot">
                 <img class="img-fluid img-thumbnail" src="images/pot.jpeg" alt="">
                 </a>
             </div>
         </div>
-
         <h3 class="my-4 title-font anchor" id="gaming">Consoles</h3>
         <div class="row text-center text-lg-left">
+            <!--
             <div class="col-lg-3 col-md-4 col-xs-6">
                 <a href="#" class="d-block mb-4 h-100">
                 <img class="img-fluid img-thumbnail" src="images/wii.jpeg" alt="">
                 </a>
             </div>
+        -->
             <div class="col-lg-3 col-md-4 col-xs-6">
-                <a href="#" class="d-block mb-4 h-100">
+                <a href="#" class="d-block mb-4 h-100" data-toggle="modal" data-target="#switch">
                 <img class="img-fluid img-thumbnail" src="images/switch.jpeg" alt="">
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6">
-                <a href="#" class="d-block mb-4 h-100">
+                <a href="#" class="d-block mb-4 h-100" data-toggle="modal" data-target="#xbox">
                 <img class="img-fluid img-thumbnail" src="images/xbox.jpeg" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6">
+                <a href="#" class="d-block mb-4 h-100" data-toggle="modal" data-target="#ps4">
+                <img class="img-fluid img-thumbnail" src="images/ps4.png" alt="">
                 </a>
             </div>
         </div>
@@ -288,6 +297,94 @@
                     <p>Classic trusty toaster.</p>
                     <p>PRICE: $5/day</p>
                     <p>Damage fee: $10<br>Loss/replacement fee: $24</p>
+                </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" tabindex="-1" role="dialog" id="pot">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Instant Pot</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Great for making a range of recipies. All moms' favorite.</p>
+                    <p>PRICE: $5/day</p>
+                    <p>Damage fee: $40<br>Loss/replacement fee: $150</p>
+                </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" tabindex="-1" role="dialog" id="switch">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Nintendo Switch</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Go-to platform for parties. Smash INCLUDED!</p>
+                    <p>PRICE: $7/day</p>
+                    <p>Damage fee: $50<br>Loss/replacement fee: $300</p>
+                </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" tabindex="-1" role="dialog" id="xbox">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Xbox One</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Arguably better platform. Fortnite and COD Infinity War included.</p>
+                    <p>PRICE: $10/day</p>
+                    <p>Damage fee: $50<br>Loss/replacement fee: $400</p>
+                </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" tabindex="-1" role="dialog" id="ps4">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Sony PS4</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Inferior platform. Uncharted and Fortnite installed.</p>
+                    <p>PRICE: $10/day</p>
+                    <p>Damage fee: $50<br>Loss/replacement fee: $400</p>
                 </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

@@ -19,7 +19,12 @@
         <link href="css/thumbnail-gallery.css" rel="stylesheet">
         <link href="css/organize.css" rel="stylesheet">
 
-
+        <script type="text/javascript">
+            function checkOut(index)
+            {
+                window.location.href="agreement.html";
+            }
+        </script>
     </head>
 
     <body>
@@ -43,6 +48,9 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#parties">Parties</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#college">College Apparel</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#cooking">Cooking</a>
@@ -97,6 +105,26 @@
                 </a>
             </div>
         </div>
+
+        <h3 class="my-4 title-font anchor" id="college">BTFU</h3>
+        <div class="row text-center text-lg-left">
+            <div class="col-lg-3 col-md-4 col-xs-6">
+                <a href="#" class="d-block mb-4 h-100" data-toggle="modal" data-target="#jersey">
+                <img class="img-fluid img-thumbnail" src="images/jersey.jpeg" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6">
+                <a class="d-block mb-4 h-100" data-toggle="modal" data-target="#jersey1">
+                <img class="img-fluid img-thumbnail" src="images/jersey1.jpeg" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6">
+                <a href="#" class="d-block mb-4 h-100" data-toggle="modal" data-target="#overall">
+                <img class="img-fluid img-thumbnail" src="images/overall.png" alt="">
+                </a>
+            </div>
+        </div>
+
         <h3 class="my-4 title-font anchor" id="cooking">You're in college. Learn how to cook.</h3>
         <p class="my-4">Note: all kitchen items are washed <b>thoroughly</b> and inspected before use.</p> 
         <div class="row text-center text-lg-left">
@@ -168,7 +196,7 @@
                 </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btn btn-primary" onclick="checkOut(0)">Checkout</button>
             </div>
             </div>
         </div>
@@ -190,7 +218,7 @@
                 </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btn btn-primary" onclick="checkOut(0)">Checkout</button>
             </div>
             </div>
         </div>
@@ -212,7 +240,7 @@
                 </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btn btn-primary" onclick="checkOut(0)">Checkout</button>
             </div>
             </div>
         </div>
@@ -234,7 +262,7 @@
                 </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btn btn-primary" onclick="checkOut(0)">Checkout</button>
             </div>
             </div>
         </div>
@@ -256,7 +284,7 @@
                 </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btn btn-primary" onclick="checkOut(0)">Checkout</button>
             </div>
             </div>
         </div>
@@ -278,7 +306,73 @@
                 </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btn btn-primary" onclick="checkOut(0)">Checkout</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" tabindex="-1" role="dialog" id="jersey">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Drew Brees Jersey</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>"Didn't Drew Brees go to Purdue?" Yes.</p>
+                    <p>PRICE: $10/day</p>
+                    <p>Damage fee: $20<br>Loss/replacement fee: $60</p>
+                </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="checkOut(0)">Checkout</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" tabindex="-1" role="dialog" id="jersey1">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Basketball Jersey</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Show that Boilermaker blood. Classic basketball jersey.</p>
+                    <p>PRICE: $10/day</p>
+                    <p>Damage fee: $50<br>Loss/replacement fee: $400</p>
+                </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="checkOut(0)">Checkout</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" tabindex="-1" role="dialog" id="overall">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Boilermaker Overalls</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>THE famous overalls. Available in size small.</p>
+                    <p>PRICE: $10/day</p>
+                    <p>Damage fee: $20<br>Loss/replacement fee: $50</p>
+                </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="checkOut(0)">Checkout</button>
             </div>
             </div>
         </div>
@@ -300,7 +394,7 @@
                 </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btn btn-primary" onclick="checkOut(0)">Checkout</button>
             </div>
             </div>
         </div>
@@ -322,7 +416,7 @@
                 </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btn btn-primary" onclick="checkOut(0)">Checkout</button>
             </div>
             </div>
         </div>
@@ -344,7 +438,7 @@
                 </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btn btn-primary" onclick="checkOut(0)">Checkout</button>
             </div>
             </div>
         </div>
@@ -366,7 +460,7 @@
                 </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btn btn-primary" onclick="checkOut(0)">Checkout</button>
             </div>
             </div>
         </div>
@@ -388,7 +482,7 @@
                 </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btn btn-primary" onclick="checkOut(0)">Checkout</button>
             </div>
             </div>
         </div>

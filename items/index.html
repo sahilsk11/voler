@@ -10,7 +10,7 @@
 
         <title>Voler - Items</title>
         <link href="../images/icon.png" rel="icon">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Varela+Round" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Varela+Round|Pacifico" rel="stylesheet">
 
         <!-- Bootstrap core CSS -->
         <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -24,13 +24,29 @@
             {
                 window.location.href="agreement.html";
             }
+
+            function redirect() {
+                setTimeout(function() {
+                    console.log("loaded");
+                    document.getElementById("loading-icon").style.display = "none";
+                    document.getElementById("navbar").style.display = "block";
+                 }, 1000);
+            }
+            redirect();
         </script>
     </head>
 
-    <body>
+    <div id="loading-icon" class="cover">
+        <h1 class="text-center brand-font" >
+            Voler
+        </h1>
+        <img class="center" src="images/loading.gif">
+    </div>
+
+    <body id="body">
 
     <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top hidden" id="navbar">
             <div class="container">
                 <a class="navbar-brand" href="#">
                 <a class="navbar-brand js-scroll-trigger" href="../">
@@ -68,7 +84,7 @@
 
         <h1 class="my-4 text-center title-font no-margin">Browse items</h1>
 
-        <h3 class="my-4 title-font anchor" id="transportation">Get around town.</h3>
+        <!--<h3 class="my-4 title-font anchor" id="transportation">Get around town.</h3>
         <div class="row text-center text-lg-left">
             <div class="col-lg-3 col-md-4 col-xs-6">
                 <a href="#" class="d-block mb-4 h-100" data-toggle="modal" data-target="#scooter">
@@ -85,9 +101,10 @@
                 <img class="img-fluid img-thumbnail" src="images/bike.jpeg" alt="">
                 </a>
             </div>
-        </div>
+        </div>-->
 
         <h3 class="my-4 title-font anchor" id="parties">Wake up the neighbors.</h3>
+        <h5 class="my-4 title-font">Essentials for every banger.</h5>
         <div class="row text-center text-lg-left">
             <div class="col-lg-3 col-md-4 col-xs-6">
                 <a href="#" class="d-block mb-4 h-100" data-toggle="modal" data-target="#speaker1">
@@ -102,6 +119,11 @@
             <div class="col-lg-3 col-md-4 col-xs-6">
                 <a href="#" class="d-block mb-4 h-100" data-toggle="modal" data-target="#speaker3">
                 <img class="img-fluid img-thumbnail" src="images/speaker2.jpeg" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6">
+                <a href="#" class="d-block mb-4 h-100" data-toggle="modal" data-target="#light1">
+                <img class="img-fluid img-thumbnail" src="images/lihts.jpg" alt="">
                 </a>
             </div>
         </div>
@@ -303,6 +325,28 @@
                     <p>Tailgate essential. Battery-powered two way speaker and aux input. Comes with microphone.</p>
                     <p>PRICE: $7/day</p>
                     <p>Damage fee: $50<br>Loss/replacement fee: $120</p>
+                </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="checkOut(0)">Checkout</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" tabindex="-1" role="dialog" id="light1">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Litake Party Lights</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Go-to light system for any party.</p>
+                    <p>PRICE: $3/day</p>
+                    <p>Damage fee: $15<br>Loss/replacement fee: $25</p>
                 </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

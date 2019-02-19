@@ -32,3 +32,27 @@ ul {
 .no-margin {
 	margin-bottom: 0px;
 }
+
+/*test*/
+
+.brand-font {
+	padding-top: 10%;
+	font-family: 'Pacifico', cursive;
+	font-size: 100px;
+	color: #20BFF0;
+}
+
+.center {
+	padding-top: 50px;
+	display: block;
+	margin: 0px auto;
+	width: 7%;
+}
+
+.cover {
+	height: 100vh;
+}
+
+.hidden {
+	display: none;
+}
